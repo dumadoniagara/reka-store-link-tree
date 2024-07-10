@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7fafc;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-lg text-center w-[350px] sm:w-[500px]">
+        <img src="/assets/logo.png" alt="store" class="sm:w-[80px] sm:h-[90px] mx-auto mb-4 rounded-full object-cover">
+        <div class="h-5"></div>
+        <div class="space-y-4 sm:space-y-4">
+            <div tabindex="0" role="button"
+                class="flex justify-center items-center gap-2 w-full bg-white border-2 border-gray-200 px-4 py-4 rounded-lg cursor-pointer"
+                onclick="openWhatsApp('6282219652851', 'Halo bun, saya mau pesan ...')">
+                <img src="/assets/logo-whatsapp.png" alt="WA" class="w-12 h-12 rounded-full object-cover">
+                <div class="font-bold">Whatsapp 0822-1965-2851</div>
+            </div>
+            <div
+                class="flex justify-center items-center gap-5 w-full bg-white border-2 border-gray-200 px-4 py-4 rounded-lg cursor-pointer">
+                <img src="/assets/logo-bbca.png" alt="WA" class="w-12 h-12 object-contain">
+                <div class="font-bold">BCA 2832104257 <br /> <span class="text-sm">Duma Doniagara Sambora</span></div>
+            </div>
+            <div
+                class="flex justify-center items-center gap-5 w-full bg-white border-2 border-gray-200 px-4 py-4 rounded-lg cursor-pointer">
+                <img src="/assets/logo-bri.png" alt="WA" class="w-12 h-12 object-contain">
+                <div class="font-bold">BRI 059801005712534<br /> <span class="text-sm">Eka Aris Apriyanti</span></div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function openWhatsApp(phoneNumber, message) {
+            let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>
